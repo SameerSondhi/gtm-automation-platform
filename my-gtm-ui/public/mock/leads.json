@@ -1,0 +1,7 @@
+[
+    { "id": 1, "name": "Ava Martin", "email": "ava@example.com", "status": "Qualified" },
+    { "id": 2, "name": "Liam Chen", "email": "liam@example.com", "status": "Contacted" },
+    { "id": 3, "name": "Nora Lee", "email": "nora@example.com", "status": "New" },
+    { "id": 4, "name": "Ethan Hall", "email": "ethan@example.com", "status": "Converted" },
+    { "id": 5, "name": "Sofia Kumar", "email": "sofia@example.com", "status": "Disqualified" }
+  ]
