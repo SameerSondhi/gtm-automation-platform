@@ -1,0 +1,100 @@
+/* crm.css */
+
+/* Layout & Container */
+.crm-container {
+    @apply p-6 max-w-6xl mx-auto text-white;
+  }
+  
+  .crm-header {
+    @apply text-2xl font-bold mb-6 neon-text;
+  }
+  
+  /* Lead Card */
+  .lead-card {
+    @apply bg-surface p-4 rounded-xl shadow border border-border transition-all duration-200;
+  }
+  
+  .lead-card:hover {
+    @apply bg-slate-800;
+  }
+  
+  .lead-card-header {
+    @apply flex justify-between items-center;
+  }
+  
+  .lead-details {
+    @apply text-sm text-muted;
+  }
+  
+  /* Form Controls */
+  .crm-input {
+    @apply w-full p-2 bg-slate-800 border border-slate-600 rounded text-sm text-white placeholder-gray-400;
+  }
+  
+  .crm-textarea {
+    @apply w-full p-2 bg-slate-800 border border-slate-600 rounded text-sm text-white placeholder-gray-400 resize-none;
+  }
+  
+  .crm-label {
+    @apply block text-xs font-medium text-muted mb-1 uppercase tracking-wide;
+  }
+  
+  .crm-form-row {
+    @apply grid md:grid-cols-2 gap-4;
+  }
+  
+  .crm-form-actions {
+    @apply flex justify-between items-center mt-4;
+  }
+  
+  /* Buttons */
+  .btn-submit {
+    @apply bg-primary text-black font-bold py-2 px-4 rounded hover:bg-opacity-90 transition-all;
+  }
+  
+  .btn-outline {
+    @apply border border-slate-600 text-white px-3 py-1 rounded hover:bg-slate-700 transition;
+  }
+  
+  .btn-danger {
+    @apply text-red-400 hover:text-red-300 text-sm;
+  }
+  
+  .btn-sync {
+    @apply bg-green-500 hover:bg-green-600 text-black font-semibold px-4 py-2 rounded;
+  }
+  
+  /* Filters & Controls */
+  .crm-filters {
+    @apply flex flex-wrap items-center gap-3 mb-4;
+  }
+  
+  .filter-button {
+    @apply px-3 py-1 rounded-full text-xs font-semibold border transition;
+  }
+  
+  .filter-button.active {
+    @apply bg-[#0ff] text-black border-[#0ff];
+  }
+  
+  .filter-button.inactive {
+    @apply bg-[#1f2937] text-slate-300 border-slate-600 hover:bg-[#2a3448];
+  }
+  
+  /* No Data State */
+  .crm-empty-state {
+    @apply text-center text-slate-400 italic py-12;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
